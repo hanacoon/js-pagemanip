@@ -6,6 +6,7 @@
 
 <script type="text/javascript">
 	function displayInformation () {
+    
 		// Your code goes here. 
 		// Do not change any other code in this file
 		// All of the steps below must be achieved using JavaScript!
@@ -16,7 +17,23 @@
 		3. Change the background color and margin for the entire page.
 		4. If someone uses the keyboard shortcut to copy the words "University of Michigan" then add the words "Go Blue" to the final div.  Each occurence should be on a separate line.  Don't use paragraphs. 
 		*/
+
+    document.querySelector("h1").innerHTML = "Hana Coon";
+
+    document.getElementById('URL').innerHTML = document.URL;
+    document.getElementById('items').innerHTML = document.getElementsByTagName("li").length;
+    document.getElementById('time').innerHTML = new Date();
+
+    document.querySelector("body").style.backgroundColor = "turquoise";
+    document.querySelector("body").style.margin = "100px";
 	}
+
+  function copyFunction() {
+    console.log("hi");
+    document.getElementById("cheer").innerHTML += "Go Blue!<br>"
+
+  }
+
 </script>
 <style>
 p{
